@@ -19,8 +19,54 @@ const Projects = () => {
             <div>
                 <ul className="group/list space-y-8">
 
-                    {/* Islas Secas */}
+                    {/* KlasStack */}
                     <li className="animate-slide-up">
+                        <div
+                            className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                            <div
+                                className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-glow lg:group-hover:drop-shadow-lg"></div>
+                            <div className="z-10 sm:order-2 sm:col-span-8">
+                                <h3 className="mb-2">
+                                    <a
+                                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base link-hover"
+                                        href="https://klasstack.com"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        aria-label="KlasStack"
+                                    >
+                                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                        <span className="gradient-text font-semibold">KlasStack</span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                            aria-hidden="true"
+                                        >
+                                            <path fillRule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clipRule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </h3>
+                                <p className="mt-2 text-sm leading-normal text-slate-300">
+                                    Multi-tenant school management SaaS serving primary, secondary, and tertiary institutions. Built the NestJS modular monolith backend with request-scoped tenant isolation, role-based access control, fee collection, and result approval workflows, plus a Next.js dashboard and a React Native companion app. Backed by MySQL, Redis/BullMQ job queues, and containerised deployments.
+                                </p>
+                                <ul className="mt-3 flex flex-wrap" aria-label="Technologies used:">
+                                    <Technology name={"NestJS"} />
+                                    <Technology name={"Next.js"} />
+                                    <Technology name={"TypeScript"} />
+                                    <Technology name={"MySQL"} />
+                                    <Technology name={"Redis / BullMQ"} />
+                                    <Technology name={"Multi-Tenancy"} />
+                                    <Technology name={"Docker"} />
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    {/* Islas Secas */}
+                    <li className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
                         <div
                             className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                             <div
@@ -62,7 +108,7 @@ const Projects = () => {
                     </li>
 
                     {/* Descriptomizer */}
-                    <li className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
+                    <li className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
                         <div
                             className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                             <div
@@ -99,49 +145,6 @@ const Projects = () => {
                                     <Technology name={"AI/ML Integration"} />
                                     <Technology name={"AWS"} />
                                     <Technology name={"Data Analytics"} />
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    {/* Thiscreet */}
-                    <li className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                        <div
-                            className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                            <div
-                                className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-glow lg:group-hover:drop-shadow-lg"></div>
-                            <div className="z-10 sm:order-2 sm:col-span-8">
-                                <h3 className="mb-2">
-                                    <a
-                                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base link-hover"
-                                        href="https://app.thiscreetapp.com/"
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                        aria-label="Thiscreet"
-                                    >
-                                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                        <span className="gradient-text font-semibold">Thiscreet</span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                            aria-hidden="true"
-                                        >
-                                            <path fillRule="evenodd"
-                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                                clipRule="evenodd"></path>
-                                        </svg>
-                                    </a>
-                                </h3>
-                                <p className="mt-2 text-sm leading-normal text-slate-300">
-                                    Cross-platform mobile application built with React Native and Expo. Implemented secure OAuth 2.0 authentication and JWT authorization to safeguard sensitive user data while delivering a 30% increase in user engagement.
-                                </p>
-                                <ul className="mt-3 flex flex-wrap" aria-label="Technologies used:">
-                                    <Technology name={"React Native"} />
-                                    <Technology name={"Expo"} />
-                                    <Technology name={"OAuth 2.0"} />
-                                    <Technology name={"JWT"} />
                                 </ul>
                             </div>
                         </div>

@@ -11,6 +11,39 @@ const WorkHistory = () => {
             <div>
                 <ol className="group/list space-y-8">
 
+                    {/* KlasStack */}
+                    <li className="animate-slide-up">
+                        <div
+                            className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                            <div
+                                className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-glow lg:group-hover:drop-shadow-lg"></div>
+                            <header
+                                className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-primary-400 sm:col-span-2"
+                                aria-label="February 2026 to Present">
+                                Feb 2026 — Present
+                            </header>
+                            <div className="z-10 sm:col-span-6">
+                                <h3 className="font-medium leading-snug text-slate-200 mb-2">
+                                    <span className="gradient-text font-semibold">Co-Founder @ KlasStack</span>
+                                </h3>
+                                <div className="glass rounded-lg p-4 mt-3">
+                                    <p className="text-slate-300 text-sm leading-relaxed">
+                                        Co-founded a multi-tenant school management SaaS and lead its technical direction end to end. Architected the NestJS modular monolith with request-scoped tenant isolation and role-based access control, shipped the Next.js admin and parent portals alongside a React Native companion app, and set up the containerised deployment and infrastructure-as-code that runs it.
+                                    </p>
+                                </div>
+                                <ul className="mt-3 flex flex-wrap" aria-label="Technologies used">
+                                    <Technology name={"NestJS"} />
+                                    <Technology name={"Next.js"} />
+                                    <Technology name={"MySQL"} />
+                                    <Technology name={"Redis / BullMQ"} />
+                                    <Technology name={"Multi-Tenancy"} />
+                                    <Technology name={"Docker"} />
+                                    <Technology name={"Terraform"} />
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
                     {/* Lendsqr */}
                     <li className="animate-slide-up">
                         <div
@@ -19,8 +52,8 @@ const WorkHistory = () => {
                                 className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-glow lg:group-hover:drop-shadow-lg"></div>
                             <header
                                 className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-primary-400 sm:col-span-2"
-                                aria-label="September 2025 to Present">
-                                Sep 2025 — Present
+                                aria-label="September 2025 to May 2026">
+                                Sep 2025 — May 2026
                             </header>
                             <div className="z-10 sm:col-span-6">
                                 <h3 className="font-medium leading-snug text-slate-200 mb-2">
@@ -49,8 +82,8 @@ const WorkHistory = () => {
                                 className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-glow lg:group-hover:drop-shadow-lg"></div>
                             <header
                                 className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-primary-400 sm:col-span-2"
-                                aria-label="June 2024 to Present">
-                                June 2024 — Present
+                                aria-label="June 2024 to August 2025">
+                                Jun 2024 — Aug 2025
                             </header>
                             <div className="z-10 sm:col-span-6">
                                 <h3 className="font-medium leading-snug text-slate-200 mb-2">
