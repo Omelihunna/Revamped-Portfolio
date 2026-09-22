@@ -1,5 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
+const SITE_URL = 'https://iheanacho-portfolio.vercel.app';
+
 interface SEOProps {
   title?: string;
   description?: string;
@@ -18,8 +20,8 @@ const SEO = ({
   title = "Iheanacho Omelihunna - Full-Stack Engineer",
   description = "Iheanacho Omelihunna is a Full-Stack Engineer specializing in building robust backend systems, dynamic frontend interfaces, and cross-platform mobile applications.",
   keywords = "Iheanacho Omelihunna, software engineer, full-stack developer, React, Node.js, TypeScript, Solidity, Blockchain, Nigeria",
-  image = "/og-image.png",
-  url = "https://github.com/Omelihunna",
+  image = `${SITE_URL}/og-image.png`,
+  url = `${SITE_URL}/`,
   type = "website",
   author = "Iheanacho Omelihunna",
   publishedTime,
@@ -78,7 +80,7 @@ const SEO = ({
       "name": siteName,
       "logo": {
         "@type": "ImageObject",
-        "url": "/favicon-32x32.png"
+        "url": `${SITE_URL}/favicon-32x32.png`
       }
     },
     "datePublished": publishedTime,
