@@ -34,4 +34,4 @@ User-agent: *
 Disallow:
 Disallow: /cgi-bin/
 
-Sitemap: https://omelihunna.github.io/sitemap.xml
+Sitemap: https://iheanacho-portfolio.vercel.app/sitemap.xml
