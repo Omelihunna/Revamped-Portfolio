@@ -14,6 +14,7 @@ interface SEOProps {
   modifiedTime?: string;
   section?: string;
   tags?: string[];
+  robots?: string;
 }
 
 const SEO = ({
@@ -27,7 +28,8 @@ const SEO = ({
   publishedTime,
   modifiedTime,
   section,
-  tags = []
+  tags = [],
+  robots = "index, follow"
 }: SEOProps) => {
   const siteName = "Iheanacho Omelihunna";
   // const twitterHandle = ""; // No twitter provided
@@ -98,7 +100,7 @@ const SEO = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={robots} />
       <link rel="canonical" href={url} />
 
       {/* Open Graph / Facebook */}
